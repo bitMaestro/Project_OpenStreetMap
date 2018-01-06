@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<head>    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <script>L_PREFER_CANVAS = false; L_NO_TOUCH = false; L_DISABLE_3D = false;</script>
+    <script src="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/leaflet@1.2.0/dist/leaflet.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Leaflet.awesome-markers/2.0.2/leaflet.awesome-markers.css" />
+    <link rel="stylesheet" href="https://rawgit.com/python-visualization/folium/master/folium/templates/leaflet.awesome.rotate.css" />
+    <style>html, body {width: 100%;height: 100%;margin: 0;padding: 0;}</style>
+    <style>#map {position:absolute;top:0;bottom:0;right:0;left:0;}</style>
+    
+            <style> #map_9a975a9030a145e9b0acd6e0233c2c5b {
+                position : relative;
+                width : 100.0%;
+                height: 100.0%;
+                left: 0.0%;
+                top: 0.0%;
+                }
+            </style>
+        
+</head>
+<body>    
+    
+            <div class="folium-map" id="map_9a975a9030a145e9b0acd6e0233c2c5b" ></div>
+        
+</body>
+<script>    
+    
+
+            
+                var bounds = null;
+            
+
+            var map_9a975a9030a145e9b0acd6e0233c2c5b = L.map(
+                                  'map_9a975a9030a145e9b0acd6e0233c2c5b',
+                                  {center: [37.6804,-121.7726],
+                                  zoom: 13,
+                                  maxBounds: bounds,
+                                  layers: [],
+                                  worldCopyJump: false,
+                                  crs: L.CRS.EPSG3857
+                                 });
+            
+        
+    
+            var tile_layer_f39a3f3e809041b38c4b5723bca1dcae = L.tileLayer(
+                'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+                {
+  "attribution": null,
+  "detectRetina": false,
+  "maxZoom": 18,
+  "minZoom": 1,
+  "noWrap": false,
+  "subdomains": "abc"
+}
+                ).addTo(map_9a975a9030a145e9b0acd6e0233c2c5b);
+        
+    
+
+            var marker_4bdcbf9cf0c943d0a38720a4b1180cfb = L.marker(
+                [37.68076,-121.76134],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9a975a9030a145e9b0acd6e0233c2c5b);
+            
+    
+
+                var icon_552d47f9a38247aabed82ec531f9a282 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'blue',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_4bdcbf9cf0c943d0a38720a4b1180cfb.setIcon(icon_552d47f9a38247aabed82ec531f9a282);
+            
+    
+            var popup_2082c4c50caa451898cc273213c93a4e = L.popup({maxWidth: '300'});
+
+            
+                var html_39f5b869e19746ac8e6e18dcb000c664 = $('<div id="html_39f5b869e19746ac8e6e18dcb000c664" style="width: 100.0%; height: 100.0%;">Livermore High Schoold, Class of 2000</div>')[0];
+                popup_2082c4c50caa451898cc273213c93a4e.setContent(html_39f5b869e19746ac8e6e18dcb000c664);
+            
+
+            marker_4bdcbf9cf0c943d0a38720a4b1180cfb.bindPopup(popup_2082c4c50caa451898cc273213c93a4e);
+
+            
+        
+    
+
+            var marker_cf29b047a5614e8180068357dc7bd983 = L.marker(
+                [37.6995091,-121.8164946],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9a975a9030a145e9b0acd6e0233c2c5b);
+            
+    
+
+                var icon_4229e5a6d50a4244ac439707f12f1250 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'red',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_cf29b047a5614e8180068357dc7bd983.setIcon(icon_4229e5a6d50a4244ac439707f12f1250);
+            
+    
+            var popup_adce2e5c1d1447c8922f22f28275d252 = L.popup({maxWidth: '300'});
+
+            
+                var html_9edc7738b4534af78ec008533062c4ee = $('<div id="html_9edc7738b4534af78ec008533062c4ee" style="width: 100.0%; height: 100.0%;">24 Hour Fitness</div>')[0];
+                popup_adce2e5c1d1447c8922f22f28275d252.setContent(html_9edc7738b4534af78ec008533062c4ee);
+            
+
+            marker_cf29b047a5614e8180068357dc7bd983.bindPopup(popup_adce2e5c1d1447c8922f22f28275d252);
+
+            
+        
+    
+
+            var marker_0f1bd68e638b4a4da3550614dbdce391 = L.marker(
+                [37.6993901,-121.775458],
+                {
+                    icon: new L.Icon.Default()
+                    }
+                )
+                .addTo(map_9a975a9030a145e9b0acd6e0233c2c5b);
+            
+    
+
+                var icon_181754fe31a6417e865b1367e2730e90 = L.AwesomeMarkers.icon({
+                    icon: 'info-sign',
+                    iconColor: 'white',
+                    markerColor: 'green',
+                    prefix: 'glyphicon',
+                    extraClasses: 'fa-rotate-0'
+                    });
+                marker_0f1bd68e638b4a4da3550614dbdce391.setIcon(icon_181754fe31a6417e865b1367e2730e90);
+            
+    
+            var popup_85e99be3a4b4480992762c8d80e9086c = L.popup({maxWidth: '300'});
+
+            
+                var html_e96b127d1d4345dcb9ff891661873fb0 = $('<div id="html_e96b127d1d4345dcb9ff891661873fb0" style="width: 100.0%; height: 100.0%;">In-N-Out Burger</div>')[0];
+                popup_85e99be3a4b4480992762c8d80e9086c.setContent(html_e96b127d1d4345dcb9ff891661873fb0);
+            
+
+            marker_0f1bd68e638b4a4da3550614dbdce391.bindPopup(popup_85e99be3a4b4480992762c8d80e9086c);
+
+            
+        
+</script>
